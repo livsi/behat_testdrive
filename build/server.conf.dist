@@ -1,7 +1,7 @@
 server {
-    server_name {{SITE_URL}};
+    server_name SITE_URL;
 
-    root "{{PATH}}/web";
+    root "PATH/web";
 
     location ~ ^/app\.php(/|$) {
         fastcgi_pass unix:/var/run/php5-fpm.sock;
