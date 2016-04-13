@@ -1,0 +1,20 @@
+default:
+    extensions:
+        Behat\MinkExtension:
+            base_url: http://jenkins.test
+            sessions:
+                selenium2:
+                    selenium2:
+                        browser: chrome
+                        capabilities:
+                            firefox:
+                                binary: /Applications/Firefox.app/Contents/MacOS/firefox-bin
+                            chrome:
+                                binary: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+    mink:
+        default_session:      ~
+        javascript_session:   selenium2
+
+    translation:
+        locale: ru
